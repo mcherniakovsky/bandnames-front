@@ -5,7 +5,6 @@ const BandAdd = () => {
 
   const[valor, setValor] = useState('');
   const {socket} = useContext(SocketContext);
-
   const onSubmit = (ev) => {
     ev.preventDefault();
     if(valor.length > 0) {

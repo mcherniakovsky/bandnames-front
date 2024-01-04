@@ -3,6 +3,7 @@ import BandAdd from '../components/BandAdd';
 import BandList from '../components/BandList';
 import { useSocket } from '../hooks/useSocket';
 import { SocketContext } from '../context/SocketContext';
+import BandChart from '../components/BandChart';
 
 
 function HomePage() {
@@ -31,6 +32,11 @@ const {online} = useContext(SocketContext);
 
      <h1>BandNames</h1>
      <hr />
+     <div className='row'>
+      <div className='col'>
+        <BandChart/>
+      </div>
+     </div>
      <div className="row">
       <div className='col-8'>
        <BandList />
